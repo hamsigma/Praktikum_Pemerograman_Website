@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    background: #f5f5f5;
+    color: #333;
+}
+
+h1 {
+    text-align: center;
+    font-size: 32px;
+    background: linear-gradient(60deg, #f9d423, #ff4e50);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+h2 {
+    color: #4CAF50;
+    border-bottom: 2px solid #4CAF50;
+    padding-bottom: 10px;
+    margin-bottom: 5px;
+}
+
+section {
+    background: #fff;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 2px 4px rgba(0,0,0,0.1);
+}
+
+/* Decoration */
+.decoration-none { text-decoration: none; }
+.decoration-underline { text-decoration: underline; text-decoration-color: #f48c5c; }
+.decoration-overline { text-decoration: overline; text-decoration-color: #7d5ac9; }
+.decoration-through { text-decoration: line-through; text-decoration-color: #795548; }
+.decoration-multiple { text-decoration: underline overline; text-decoration-color: #b0b0b0; }
+
+/* Transform */
+.transform-none { text-transform: none; }
+.transform-uppercase { text-transform: uppercase; color: #7c4dff; font-weight: bold; }
+.transform-lowercase { text-transform: lowercase; color: #3498db; }
+.transform-capitalize { text-transform: capitalize; color: #27ae60; font-weight: 600; }
+
+/* Align */
+.align-left { text-align: left; }
+.align-center { text-align: center; background: #e0f7fa; padding: 10px; }
+.align-right { text-align: right; background: #f1f8e9; padding: 10px; }
+.align-justify { text-align: justify; background: #e8f5e9; padding: 15px; border-left: 4px solid #27ae60; }
+
+/* Font Family */
+.font-serif { font-family: 'Times New Roman', serif; }
+.font-sans { font-family: Arial, sans-serif; }
+.font-mono { font-family: 'Courier New', monospace; background: #f0f0f0; padding: 5px; }
+.font-custom { font-family: 'Roboto', sans-serif; color: #674cc4; }
+
+/* Font Size */
+.size-small { font-size: 12px; }
+.size-medium { font-size: 16px; }
+.size-large { font-size: 20px; }
+.size-xlarge { font-size: 24px; }
+.size-xxlarge { font-size: 32px; }
+
+/* Font Weight */
+.weight-light { font-weight: 100; }
+.weight-normal { font-weight: 400; }
+.weight-medium { font-weight: 500; }
+.weight-bold { font-weight: 700; }
+.weight-bolder { font-weight: 900; }
+
+/* Font Style */
+.style-normal { font-style: normal; }
+.style-italic { font-style: italic; }
+.style-oblique { font-style: oblique; }
+
+/* Line Height */
+.line-small { line-height: 1.2; background: #ffebee; padding: 10px; }
+.line-normal { line-height: 1.6; background: #e3f2fd; padding: 10px; }
+.line-large { line-height: 2; background: #f5f5f5; padding: 10px; }
+
+/* Letter Spacing */
+.ls-tight { letter-spacing: -1px; font-weight: bold; }
+.ls-normal { letter-spacing: normal; }
+.ls-wide { letter-spacing: 3px; text-transform: uppercase; font-weight: bold; color: #8044ad; }
+
+/* Word Spacing */
+.ws-normal { word-spacing: normal; }
+.ws-wide { word-spacing: 10px; background: #fff9c4; padding: 10px; }
+
+/* Text Shadow */
+.shadow-light {
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+  font-size: 24px;
+  font-weight: bold;
+}
+.shadow-dark {
+  text-shadow: 2px 2px 6px rgba(0,0,0,0.5);
+  color: #2c3e50;
+  font-size: 28px;
+  font-weight: bold;
+}
+.shadow-multi {
+  text-shadow: 2px 2px 5px #888, 4px 4px 10px #3498db, 6px 6px 15px #e74c3c;
+  color: #4a90e2;
+  font-size: 32px;
+  font-weight: bold;
+  text-align: center;
+}

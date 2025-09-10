@@ -1,0 +1,157 @@
+/* =========================
+   Style.css – Jamal Extreme Merch
+   ========================= */
+
+   :root{
+    --bg:#0b0b0c;
+    --card:#121216;
+    --muted:#bdbdbf;
+    --text:#f5f5f7;
+    --accent:#e11d48; /* crimson */
+    --accent-2:#9f1239; /* darker crimson */
+    --ring: 0 0 0 .125rem rgba(225,29,72,.4);
+    --radius: 18px;
+    --max: 1120px;
+  }
+  *{box-sizing:border-box}
+  html,body{height:100%}
+  body{
+    margin:0; background:radial-gradient(1200px 700px at 100% -10%, #1a1a22 0%, #0b0b0c 60%), var(--bg);
+    color:var(--text); font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,Cantarell,Noto Sans,sans-serif;
+    line-height:1.6;
+  }
+  a{color:inherit; text-decoration:none}
+  img{max-width:100%; display:block}
+  .container{max-width:var(--max); margin-inline:auto; padding:0 1rem}
+
+  /* Header */
+  header{
+    position:sticky; top:0; z-index:50;
+    backdrop-filter:saturate(1.2) blur(8px);
+    background:linear-gradient(180deg, rgba(18,18,22,.85), rgba(18,18,22,.65));
+    border-bottom:1px solid rgba(255,255,255,.06);
+  }
+  .nav{display:flex; align-items:center; justify-content:space-between; gap:.75rem; padding:.75rem 0}
+  .brand{display:flex; align-items:center; gap:.6rem; font-weight:800; letter-spacing:.5px}
+  .brand .logo{
+    width:40px; height:40px; border-radius:50%;
+    background:conic-gradient(from 210deg, var(--accent), var(--accent-2));
+    display:grid; place-items:center; box-shadow:0 10px 30px rgba(225,29,72,.35);
+    outline:1px solid rgba(255,255,255,.1);
+  }
+  .brand .logo svg{width:22px; height:22px; fill:white}
+
+  /* Nav links */
+  #nav-toggle{display:none}
+  .links{display:flex; gap:1rem; align-items:center}
+  .links a{padding:.45rem .7rem; border-radius:999px; color:var(--muted)}
+  .links a:hover{color:var(--text); background:rgba(255,255,255,.06)}
+  .cta{background:linear-gradient(180deg, var(--accent), var(--accent-2)); color:white !important; font-weight:700}
+  .cta:hover{filter:brightness(1.05); box-shadow:var(--ring)}
+
+  /* Mobile menu */
+  .hamburger{display:none; cursor:pointer; padding:.35rem .5rem; border-radius:10px}
+  .hamburger:hover{background:rgba(255,255,255,.08)}
+  @media (max-width:840px){
+    .links{position:fixed; inset:60px 1rem auto 1rem; background:rgba(18,18,22,.98); border:1px solid rgba(255,255,255,.06); border-radius:16px; padding:1rem; display:none; flex-direction:column}
+    #nav-toggle:checked ~ .links{display:flex}
+    .hamburger{display:block}
+  }
+
+  /* Hero */
+  .hero{position:relative; isolation:isolate}
+  .hero::after{
+    content:""; position:absolute; inset:0; z-index:-1;
+    background:
+      radial-gradient(800px 260px at 20% 0%, rgba(225,29,72,.18), transparent 60%),
+      radial-gradient(900px 380px at 100% 20%, rgba(153,27,27,.18), transparent 60%);
+    pointer-events:none;
+  }
+  .hero-inner{display:grid; grid-template-columns:1.1fr .9fr; gap:2rem; align-items:center; padding:3.5rem 0 2.5rem}
+  .kicker{color:var(--muted); font-weight:700; letter-spacing:.12em; text-transform:uppercase; font-size:.8rem}
+  h1{font-family:Anton, Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; letter-spacing:.5px; line-height:1.05; font-size:clamp(2.2rem, 5vw, 4rem); margin:.3rem 0 1rem}
+  .lead{font-size:1.05rem; color:#e4e4e7}
+  .actions{display:flex; gap:.8rem; flex-wrap:wrap; margin-top:1.2rem}
+  .btn{display:inline-flex; align-items:center; gap:.5rem; padding:.8rem 1.1rem; border-radius:999px; font-weight:700; border:1px solid rgba(255,255,255,.1)}
+  .btn-outline{color:var(--text); background:transparent}
+  .btn-outline:hover{background:rgba(255,255,255,.06)}
+
+  .poster{
+    aspect-ratio: 4/3; border-radius:var(--radius);
+    background:
+      linear-gradient(180deg, rgba(0,0,0,.25), rgba(0,0,0,.6)),
+      url('asset/welcomeRLX.jpg');
+    background-size:cover; background-position:center;
+    display:flex; align-items:flex-end; padding:1rem; overflow:hidden;
+    outline:1px solid rgba(255,255,255,.08);
+    box-shadow:0 25px 60px rgba(0,0,0,.55), 0 0 0 1px rgba(255,255,255,.06) inset;
+  }
+  .poster .tag{background:rgba(225,29,72,.85); padding:.4rem .7rem; border-radius:999px; font-weight:800; font-size:.85rem}
+
+  .poster2{
+    aspect-ratio: 4/3; border-radius:var(--radius);
+    background:
+      linear-gradient(180deg, rgba(0,0,0,.25), rgba(0,0,0,.6)),
+      url('asset/thanks.jpg');
+    background-size:cover; background-position:center;
+    display:flex; align-items:flex-end; padding:1rem; overflow:hidden;
+    outline:1px solid rgba(255,255,255,.08);
+    box-shadow:0 25px 60px rgba(0,0,0,.55), 0 0 0 1px rgba(255,255,255,.06) inset;
+  }
+  .poster2 .tag2{background:rgba(225,29,72,.85); padding:.4rem .7rem; border-radius:999px; font-weight:800; font-size:.85rem}
+  
+  @media (max-width:900px){
+    .hero-inner{grid-template-columns:1fr; padding:2.2rem 0 1.5rem}
+  }
+
+  /* Section headings */
+  .section{padding:2.8rem 0}
+  .section h2{font-family:Anton; letter-spacing:.5px; font-size:clamp(1.4rem, 3vw, 2.2rem); margin:0 0 .8rem}
+  .section p.sub{color:var(--muted); margin:0 0 1.4rem}
+
+  /* Cards / products */
+  .grid{display:grid; gap:1rem; grid-template-columns:repeat(12,1fr)}
+  .product{grid-column:span 3; background:linear-gradient(180deg, #131319, #0f0f13); border:1px solid rgba(255,255,255,.06); border-radius:var(--radius); overflow:hidden; display:flex; flex-direction:column}
+  .product-media{position:relative}
+  .product-media img{width:100%; aspect-ratio: 1 / 1; object-fit:cover}
+  .badge{position:absolute; top:.6rem; left:.6rem; background:rgba(225,29,72,.9); padding:.35rem .6rem; border-radius:999px; font-size:.78rem; font-weight:800}
+  .product-body{padding:1rem}
+  .product-title{font-weight:800; margin:0}
+  .meta{color:var(--muted); font-size:.9rem}
+  .price{margin-top:.6rem; font-weight:800}
+  .product .btn{margin:1rem; justify-content:center}
+
+  /* responsive columns */
+  @media (max-width:1120px){ .product{grid-column:span 4} }
+  @media (max-width:760px){ .product{grid-column:span 6} }
+  @media (max-width:520px){ .product{grid-column:span 12} }
+
+  /* Info cards */
+  .cards{display:grid; gap:1rem; grid-template-columns:repeat(12,1fr)}
+  .card{grid-column:span 4; background:linear-gradient(180deg, #15151b, #0f0f13); border:1px solid rgba(255,255,255,.06); border-radius:var(--radius); padding:1.1rem}
+  .card h3{margin:.2rem 0 .4rem; font-size:1.05rem}
+  .card p{color:#d8d8db; margin:.2rem 0}
+  @media (max-width:980px){ .card{grid-column:span 6} }
+  @media (max-width:520px){ .card{grid-column:span 12} }
+
+  /* Gigs strip */
+  .strip{border-radius:var(--radius); background:linear-gradient(90deg, rgba(225,29,72,.15), rgba(225,29,72,.05)); border:1px solid rgba(255,255,255,.08); padding:1rem; display:flex; gap:1rem; align-items:center; overflow:auto}
+  .pill{white-space:nowrap; border:1px solid rgba(255,255,255,.18); border-radius:999px; padding:.5rem .8rem; font-weight:700}
+
+  /* Contact */
+  .contact{display:grid; grid-template-columns:1fr 1fr; gap:1rem}
+  .panel{background:linear-gradient(180deg, #141419, #0f0f13); border:1px solid rgba(255,255,255,.06); border-radius:var(--radius); padding:1.2rem}
+  .list{display:grid; gap:.5rem}
+  .list .row{display:flex; gap:.7rem; align-items:flex-start}
+  .row svg{flex:0 0 20px}
+  .map{
+    aspect-ratio:4/3; border-radius:12px; border:1px dashed rgba(255,255,255,.18);
+    display:grid; place-items:center; color:var(--muted); font-size:.95rem; margin-top:.6rem
+  }
+  @media (max-width:900px){ .contact{grid-template-columns:1fr} }
+
+  /* Footer */
+  footer{border-top:1px solid rgba(255,255,255,.08); padding:1.5rem 0; color:var(--muted); font-size:.95rem}
+
+  /* Nice hover */
+  .product:hover, .card:hover, .panel:hover{transform:translateY(-2px); transition:transform .2s ease; box-shadow:0 10px 30px rgba(0,0,0,.35)}

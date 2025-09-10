@@ -1,0 +1,91 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    background-color: #f0f0f0;
+}
+
+h1 {
+    color: #333;
+    text-align: center;
+}
+
+p {
+    color: #666;
+    line-height: 1.6;
+}
+
+/* CLASS SELECTOR - Gaya dengan class */
+.highlight {
+    background-color: #ffffcc;
+    padding: 10px;
+    border: 2px solid #ffcc00;
+    margin: 10px 0;
+}
+
+/* CHILD SELECTOR - anak langsung */
+nav > ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav > ul > li {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px;
+    margin: 5px;
+    border-radius: 5px;
+}
+
+/* FIELD GROUP SELECTOR */
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+    display: block;
+    margin: 10px 0;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+input:focus {
+    border-color: #4CAF50;
+    outline: none;
+}
+
+button[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button[type="submit"]:hover {
+    background-color: #45a049;
+}
+
+/* GROUP SELECTOR - memilih multiple elemen */
+h1, h2, h3 {
+    color: #2196F3;
+    margin-bottom: 10px;
+}
+
+/* PSEUDO CLASS SELECTOR */
+a {
+    color: #2196F3;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+    color: #0b7dda;
+}
+
+a:active {
+    color: red;
+}
+
+a:visited {
+    color: purple;
+}
