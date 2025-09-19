@@ -1,8 +1,0 @@
-README:
-STUDI KASUS :
-	Jamal merupakan penjual extreme merch band dan mempunyai toko Rapal Extreme Merch yang berada di kota sangatta, dia mempromosikan produk nya melalui 
-   sosial media maupun saat ada acara gigs, dan toko nya terkenal di daerah sangatta. Jamal mempunyai ide agar promosi merch yang ada di tokonya bisa di lihat di 
-   internet dengan memberikan informasi apa saja barang yang ada di tokonya, dengan cara ya itu membuat sebuah website sederhana untuk menampilkan informasi tokonya.
-
-Tugas : 
-   	Tugas Studi Kasus buat lah sebuah tampilan dari studi kasus hanya menggunakan HTML & CSS
