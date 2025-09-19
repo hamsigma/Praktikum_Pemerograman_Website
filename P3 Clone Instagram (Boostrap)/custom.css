@@ -1,0 +1,92 @@
+:root {
+    --ig-bg: #000000;
+    --ig-border: #262626;
+    --ig-text-secondary: #8e8e8e;
+    --ig-button: #0095f6;
+  }
+  
+  body {
+    background-color: var(--ig-bg);
+    color: white;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  }
+  
+  /* Profile Picture */
+  .profile-img {
+    width: 150px;
+    height: 150px;
+    border: 3px solid var(--ig-border);
+  }
+  
+  /* Stories */
+  .story-img {
+    width: 77px;
+    height: 77px;
+    border: 2px solid var(--ig-border);
+  }
+  
+  .story-img.active {
+    border-color: #ffd700;
+  }
+  
+  /* Posts Grid */
+  .post-img {
+    aspect-ratio: 1;
+    object-fit: cover;
+    transition: transform 0.2s ease;
+  }
+  
+  .post-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    opacity: 0;
+    transition: opacity 0.2s ease;
+  }
+  
+  .post-item:hover .post-overlay {
+    opacity: 1;
+  }
+  
+  .post-item:hover .post-img {
+    transform: scale(1.02);
+  }
+  
+  /* Custom Bootstrap overrides */
+  .btn-outline-light {
+    color: white;
+    border-color: var(--ig-border);
+    background-color: var(--ig-border);
+  }
+  
+  .btn-outline-light:hover {
+    background-color: #363636;
+    border-color: #363636;
+  }
+  
+  .nav-tabs {
+    border-bottom: 1px solid var(--ig-border);
+  }
+  
+  .nav-tabs .nav-link {
+    color: var(--ig-text-secondary);
+    border: none;
+    background: none;
+  }
+  
+  .nav-tabs .nav-link.active {
+    color: white;
+    border-bottom: 1px solid white;
+    background: none;
+  }
+  
+  .text-muted {
+    color: var(--ig-text-secondary) !important;
+  }
+  
+  .border-custom {
+    border-color: var(--ig-border) !important;
+  }
