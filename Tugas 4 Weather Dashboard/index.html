@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="weather-card">
+            <h1>Weather Dashboard</h1>
+            <p class="subtitle">Informasi Cuaca Di Kota Indonesia</p>
+            
+            <div class="input-section">
+                <input type="text" id="cityInput" placeholder="Masukkan nama kota..." autocomplete="off">
+                <button id="submitBtn" class="weather-button">Tampilkan Cuaca</button>
+            </div>
+            
+            <!-- Weather result akan tersembunyi sampai user submit -->
+            <div class="weather-result" id="weatherResult" style="display: none;">
+                <div class="city-info">
+                    <h2 id="cityName"></h2>
+                    <div class="temperature" id="temperature"></div>
+                    <div class="condition" id="condition"></div>
+                </div>
+            </div>
+            
+            <!-- Console output juga tersembunyi -->
+            <div class="console-output" id="consoleOutput" style="display: none;">
+                <div class="console-header">Console Output:</div>
+                <div class="console-content">
+                    <!-- Content akan diisi setelah submit -->
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>

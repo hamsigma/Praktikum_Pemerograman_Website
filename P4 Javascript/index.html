@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Laporan Studi Mahasiswa</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="form-container">
+        <h2>Laporan Studi Mahasiswa</h2>
+        
+        <div class="input-field">
+            <label for="nama">Nama:</label>
+            <input type="text" id="nama" placeholder="Masukkan nama Anda">
+        </div>
+        
+        <div class="input-field">
+            <label for="nim">NIM:</label>
+            <input type="text" id="nim" placeholder="Masukkan NIM Anda">
+        </div>
+        
+        <div class="input-field">
+            <label for="prodi">Prodi:</label>
+            <input type="text" id="prodi" placeholder="Masukkan program studi">
+        </div>
+
+        <div class="input-field">
+            <label for="matkul">Mata Kuliah:</label>
+            <input type="text" id="matkul" placeholder="Masukkan nama mata kuliah">
+        </div>
+
+        <div class="input-field">
+            <label for="nilai">Nilai:</label>
+            <input type="number" id="nilai" placeholder="Masukkan nilai angka">
+        </div>
+        
+        <button id="submitBtn">Submit Laporan</button>
+
+        <div class="output-container">
+            <h3>Hasil Laporan:</h3>
+            <p id="hasilLaporan"></p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
