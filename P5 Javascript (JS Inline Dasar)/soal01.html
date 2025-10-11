@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Soal 1 - Seleksi Nilai</title>
+  <script>
+    var nilai = prompt("Masukkan nilai Anda (0-100):");
+    nilai = parseInt(nilai);
+    var huruf, keterangan;
+
+    if (nilai >= 80 && nilai <= 100) {
+      huruf = "A"; keterangan = "Lulus";
+    } else if (nilai >= 75) {
+      huruf = "AB"; keterangan = "Lulus";
+    } else if (nilai >= 70) {
+      huruf = "B"; keterangan = "Lulus";
+    } else if (nilai >= 65) {
+      huruf = "BC"; keterangan = "Lulus";
+    } else if (nilai >= 60) {
+      huruf = "C"; keterangan = "Lulus";
+    } else if (nilai >= 50) {
+      huruf = "D"; keterangan = "Tidak Lulus";
+    } else if (nilai >= 0) {
+      huruf = "E"; keterangan = "Tidak Lulus";
+    } else {
+      huruf = "-"; keterangan = "Nilai tidak valid";
+    }
+
+    document.write("<h2>Hasil Penilaian</h2>");
+    document.write("Nilai Angka: " + nilai + "<br>");
+    document.write("Nilai Huruf: " + huruf + "<br>");
+    document.write("Keterangan: " + keterangan);
+  </script>
+</head>
+<body>
+</body>
+</html>
