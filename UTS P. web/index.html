@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Form Mahasiswa</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    
+    <div class="left-section">
+      <h1>Input Data</h1>
+
+      <label>Masukkan Nama:</label>
+      <input type="text" id="nama" placeholder="Masukkan Nama">
+
+      <label>Masukkan NIM:</label>
+      <input type="text" id="nim" placeholder="Masukkan NIM">
+
+      <label>Semester:</label>
+      <input type="text" id="semester" placeholder="1-6">
+
+      <label>Program Studi:</label>
+      <select id="prodi">
+        <option value="">-- Pilih Program Studi --</option>
+        <option>S1 TEKNIK INFORMATIKA</option>
+        <option>S1 TEKNIK MESIN</option>
+        <option>S1 TEKNIK GEOLOGI</option>
+        <option>S1 TEKNIK PERTAMBANGAN</option>
+        <option>S1 TEKNIK LINGKUNGAN</option>
+        <option>S1 KEDOKTERAN</option>
+        <option>D4 FARMASI</option>
+        <option>D4 ILMU KOMPUTER</option>
+      </select>
+
+      <label>Masukkan Email:</label>
+      <input type="email" id="email" placeholder="Masukkan Email">
+
+      <button id="btnKirim">KIRIM DATA</button>
+
+      <div class="muted-note">Pastikan isi data mahasiswa dengan benar.</div>
+    </div>
+
+    <div class="right-section">
+      <div class="info">
+        <h2>Informasi Pengiriman</h2>
+        <B><p>Apa yang terjadi saat anda klik "Kirim Data" ?</p></b>
+        <ul>
+          <li>Data ditampilkan di console.</li>
+          <li>Data disimpan di array.</li>
+          <li>Jumlah data di update.</li>
+          <li>Form akan kosong kembali.</li>
+        </ul>
+      </div>
+
+      <h2>Table Mahasiswa</h2>
+      <table id="tabelMahasiswa">
+        <thead>
+          <tr>
+            <th>NO</th>
+            <th>NAMA</th>
+            <th>INFO</th>
+          </tr>
+        </thead>
+        <tbody>
+          
+        </tbody>
+      </table>
+    </div>
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

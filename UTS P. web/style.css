@@ -1,0 +1,117 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-color: #f2f2f2;
+  }
+  
+  .container {
+    display: flex;
+    height: 100vh;
+  }
+  
+  .left-section {
+    width: 40%;
+    background-color: white;
+    padding: 30px;
+    box-sizing: border-box;
+    border-right: 2px solid #dddddd;
+  }
+  
+  .left-section h2 {
+    margin-bottom: 20px;
+    color: #222;
+  }
+  
+  label {
+    display: block;
+    margin-top: 15px;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  input, select {
+    width: 90%;
+    padding: 8px;
+    margin-top: 5px;
+    border: 1px solid #aaa;
+    border-radius: 5px;
+    font-size: 14px;
+  }
+  
+  button {
+    display: block;
+    width: 100%;          
+    margin: 20px auto 0; 
+    padding: 12px;
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    text-align: center;
+    font-weight: 600;
+  }
+  
+  button:hover {
+    background-color: #333;
+  }
+  
+  .right-section {
+    width: 60%;
+    padding: 30px;
+    box-sizing: border-box;
+  }
+  
+  .info {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  }
+  
+  .info h2 {
+    margin-top: 0;
+  }
+  
+  ul {
+    margin: 0;
+    padding-left: 20px;
+  }
+  
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #fff;
+  }
+  
+  th, td {
+    border: 1px solid #ccc;
+    padding: 10px;
+    vertical-align: top; 
+  }
+  
+  th {
+    background-color: #f5f4f4;
+    color: black;
+    text-align: left;
+  }
+  
+  td {
+    color: #333;
+  }
+  
+  td small {
+    color: #666;
+    font-size: 12px;
+  }
+  
+  #btnKirim:hover {
+    background-color: #333;
+  }
+  
+  .muted-note {
+    margin-top: 12px;
+    color: #6c6c6c;
+    font-size: 13px;
+  }
