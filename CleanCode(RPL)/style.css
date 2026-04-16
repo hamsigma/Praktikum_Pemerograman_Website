@@ -1,0 +1,51 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  background: #111;
+  color: #fff;
+}
+
+.container {
+  max-width: 1000px;
+  margin: auto;
+  padding: 20px;
+}
+
+.section {
+  padding: 40px 0;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+}
+
+.product {
+  background: #1a1a1a;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.product img {
+  width: 100%;
+}
+
+.product-body {
+  padding: 15px;
+}
+
+.badge {
+  background: red;
+  padding: 5px;
+  font-size: 12px;
+}
+
+.btn {
+  width: 100%;
+  padding: 10px;
+  background: crimson;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
